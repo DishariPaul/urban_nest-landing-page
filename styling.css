@@ -61,6 +61,7 @@ nav.scrolled {
     background: #111;     /* navbar becomes dark during scroll */
     padding: 10px 20px;
 }
+.nav-toggle {display: none;}
 nav .logo {
     color: white;
     font-size: 24px;
@@ -381,9 +382,10 @@ nav ul li a:hover {
   }
 
 
-  /* mobile nav: show hamburger*/
+  /* mobile nav: show hamburger when smaller screen size*/
   .nav-toggle { display: block; }
-  .nav-links { display: none; }
+  .nav-links { display: none; position: absolute; top:64px; right:12px; }
+  .nav-links.show { display: flex; flex-direction: column; }
 
   .card-container { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 18px; }
   .card-img { height: 200px; }
@@ -401,3 +403,4 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
