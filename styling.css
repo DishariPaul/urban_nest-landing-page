@@ -1,0 +1,403 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*MY FONT STYLES*/
+/* Mary Poppins Regular */
+@font-face {
+    font-family: 'MaryPoppins';
+    src: url('./fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Mary Poppins Medium */
+@font-face {
+    font-family: 'MaryPoppins';
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/* Mary Poppins Bold */
+@font-face {
+    font-family: 'MaryPoppins';
+    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Mary Poppins Italics */
+@font-face {
+    font-family: 'MaryPoppins';
+    src: url('./fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+/*Mary Poppins Light*/
+@font-face{
+    font-family: 'MaryPoppins';
+    src: url('./fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    margin: 8px;
+    width: 99%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7a77779f;
+    border-radius: 10px;
+}
+nav.scrolled {
+    background: #111;     /* navbar becomes dark during scroll */
+    padding: 10px 20px;
+}
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    font-family: 'MaryPoppins', sans-serif;
+    font-style: normal;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+nav ul li a:hover {
+    transition: color 0.3s ease;
+    color: #ff5c5c;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background-image: url("./landbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'MaryPoppins', sans-serif;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.hero p{
+    margin: 0;
+    font-size: 18px;
+}
+.btn {
+    margin-top: 100px;
+    padding: 12px 25px;
+    border: none;
+    background: #b5dd9d90;
+    color: white;
+    font-family: 'MaryPoppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #10552780;
+    transition: transform 0.5s ease, color 0.5s ease;
+    color:#ff5c5c;
+    background-color: #e7deafa4;
+    transform: scale(1.08);
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+.section h2 {
+    font-family: 'MaryPoppins', sans-serif;
+    color: rgb(251, 243, 232);
+    font-size: 40px;
+    margin: 30px;
+}
+.section h3 {
+    color: rgb(251, 243, 232);
+    font-size: 22px;
+    font-weight: 200;
+    margin: 30px;
+}
+.section p {
+    color: #51100F;
+    font-family: 'MaryPoppins', sans-serif;
+    font-weight: 300;                      /* Light, clean look */
+    max-width: 700px;                      /* ideal paragraph width */
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height: 1.7;
+    word-spacing: normal;                  /* prevents weird spacing */
+}
+
+
+/*ABOUT PAGE*/
+#about {
+    display: flex;
+    gap: 6%;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 10px 0;
+    background: linear-gradient(#57bf99, #0e664f);
+    padding: 48px 6%;
+    box-sizing: border-box; /* keep content from overflowing horizontally */
+    overflow: hidden;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   /* left aligned on wide screens */
+    padding: 10px;
+    max-width: 60%;            /* limits the text width on large screens */
+    gap: 18px;
+    color: #fff;
+    line-height: 1.6;
+    word-spacing: normal;      /* avoid large fixed word-spacing */
+}
+.about-text h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'MaryPoppins', sans-serif;
+    margin: 0 auto 10px auto;   /* centers and adds spacing below */
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+}
+.about-text h4{
+    color: #F5F1E8;
+    font-family: 'MaryPoppins', sans-serif;
+    font-style: italic;
+    font-weight:lighter;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.about-img{
+    flex: 0 0 20px;                /*fixed base width for the image column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    border-radius: 40px;
+    box-shadow: 0px 0px 12px 3px #064232d6;
+    width: 400px;
+    height: 500px;
+    margin-right: 10%;
+    object-fit: cover;
+}
+.about-img img:hover{
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+    transform: scale(1.02);
+}
+.ratings ul {
+  list-style: none;       /* removes the bullet */
+  padding-left: 0;        /* removes default UL indent */
+}
+.ratings ul li {
+  display: flex;
+  color: #51100F;
+  align-items: center;    /* vertically align star + text */
+  gap: 10px;              /* spacing between star and text */
+  margin: 6px 0;
+}
+
+
+/*EXPLORE PAGE*/
+#explore{
+    background-color: #115435a3;
+    margin: 10px 0 10px 0;
+    padding: 50px 0 10px 0;
+    width: 100%;
+    overflow-x: scroll;
+}
+#explore::-webkit-scrollbar{
+    visibility: hidden;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    /* exactly 3 per row */
+    gap: 40px;
+    padding: 50px;
+}
+.card{
+    background-color: #EED9B9;
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+}
+.card h3{
+    font-family: 'MaryPoppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a0903d6;
+    margin-bottom:0;
+}
+.card-rating {
+    font-size: 18px;
+    color: #f7b500; 
+    margin-bottom: 0;
+}
+.card-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #444;
+}
+.card:hover {
+    cursor:pointer;
+    transition: transform 0.5s ease;
+    transform: translateY(-10px);
+    transition: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.card-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+/*TESTIMONIALS SECTION*/
+#testimonials{
+    background-color: #F5F1E8;
+    margin: 10px 0 10px 0;
+}
+.cust-container{
+    display: flex;
+    flex-direction: column;   /*this makes them go one below another, like a stack*/
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cust-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10%;
+    align-items: center;
+}
+.cust-card h4{
+    font-family: 'MaryPoppins', sans-serif;
+    font-style: normal;
+    color: #0e664f;
+    margin-top: 20px;
+}
+.cust-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;   /*forces it to be perfect squares and then perfect circles, not oval or something else*/
+    object-fit: cover;       /*fixes any faulty size difference*/
+}
+
+/*CONTACT US*/
+#contact{
+    background-color: #064232;
+}
+#contact p{
+    display: inline;
+    color: #F5F1E8;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .card-container { grid-template-columns: repeat(2, 1fr); padding: 24px; }
+  .about-img { flex: 0 0 320px; max-width: 360px; }
+  .about-text p { max-width: 560px; }
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: row;    /* image above text */
+    padding: 28px 6%;
+    gap: 28px;
+    align-items: center;            /* center children */
+  }
+  .about-text {
+    text-align: center;
+    padding: 0 8px;
+    width: 100%;
+    max-width: 700px;
+  }
+  .about-text h2 { margin-top: 6px; }
+  .about-text p {
+    margin: 8px auto;
+    max-width: 620px;
+    line-height: 1.6;
+  }
+
+  /* Image column: allow it to scale and never exceed viewport width */
+  .about-img {
+    flex: 0 0 auto;         /* let it size naturally */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Cap the image size so it doesn't take over the screen */
+  .about-img img {
+    width: 92%;             /* nearly full width but leaves breathing room */
+    max-width: 360px;       /* prevent huge images on taller phones */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(6,66,50,0.32);
+    transform: none;        /* prevent unexpected transforms */
+  }
+
+
+  /* mobile nav: show hamburger*/
+  .nav-toggle { display: block; }
+  .nav-links { display: none; }
+
+  .card-container { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 18px; }
+  .card-img { height: 200px; }
+}
+
+@media (max-width: 480px) {
+  :root { --nav-h: 56px; }
+  body { padding-top: calc(var(--nav-h) + 8px); }
+
+  .hero { padding: 28px 12px; }
+  #about { padding: 20px 6%; }
+  .about-text .lead { font-size: .95rem; }
+  .card-container { grid-template-columns: 1fr; gap: 14px; padding: 12px; }
+  .card-img { height: 180px; }
+  .cust-card { flex-direction: column; text-align: center; align-items: center; }
+  .cust-card img { margin-bottom: 12px; }
+}
