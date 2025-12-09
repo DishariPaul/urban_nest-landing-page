@@ -438,8 +438,39 @@ nav ul li a:hover {
         transition: color 0.3s ease;
         color: brown;
     }
-  #about { padding: 20px 6%; }
-.section{
+  #about { padding: 20px 6%; 
+          height: 100vh;
+    background: url(./landbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     aspect-ratio: 1/1;
+    object-position: center
+   }
+  #explore{
+      height: 100vh;
+    background: url(./landbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     aspect-ratio: 1/1;
+    object-position: center
+   }
+    #testimonials{
+        height: 100vh;
+    background: url(./landbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     aspect-ratio: 1/1;
+    object-position: center
+   }
+    #contact{
+        height: 100vh;
+    background: url(./landbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
      aspect-ratio: 1/1;
     object-position: center
    }
@@ -449,12 +480,3 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
-
-
-
-
-
-
-
-
-
