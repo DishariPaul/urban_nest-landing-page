@@ -343,13 +343,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    .hero{
-    height: 100vh;
-    background: url(./landbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
+
     #about {
     flex-direction: row;    /* image above text */
     padding: 28px 6%;
@@ -414,13 +408,6 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
-  .hero{
-    height: 100vh;
-    background: url(./landbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
   .nav-links { 
     background-color: #c8c3c3e9;
     padding: 10px;
@@ -436,6 +423,7 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
 
 
 
