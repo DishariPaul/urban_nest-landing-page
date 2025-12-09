@@ -348,9 +348,9 @@ nav ul li a:hover {
     background: url(./landbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
   }
-  #about {
+    #about {
     flex-direction: row;    /* image above text */
     padding: 28px 6%;
     gap: 28px;
@@ -394,7 +394,8 @@ nav ul li a:hover {
   }
 
 
-  /* mobile nav: show hamburger when smaller screen size*/
+  /* mobile nav: show hamburger*/
+  @media (max-width: 768px) {
   .nav-toggle { display: block; }
   .nav-links { 
     background-color: #c8c3c3e9;
@@ -404,11 +405,8 @@ nav ul li a:hover {
     position: absolute; 
     top:64px; 
     right:12px; }
-    .nav-links:hover{
-        transition: color 0.3s ease;
-        color: brown;
-    }
   .nav-links.show { display: flex; flex-direction: column; }
+}
 
   .card-container { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 18px; }
   .card-img { height: 200px; }
@@ -416,15 +414,13 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
- /* .hero{
+  .hero{
     height: 100vh;
     background: url(./landbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    aspect-ratio: 1/1;
-    object-position: center;
-  } */
+    background-position: center top;
+  }
   .nav-links { 
     background-color: #c8c3c3e9;
     padding: 10px;
@@ -432,25 +428,14 @@ nav ul li a:hover {
     display: none; 
     position: absolute; 
     top:64px; 
-    right:12px; 
-    }
-    .nav-links:hover{
-        transition: color 0.3s ease;
-        color: brown;
-    }
-  .hero {
-    background-size: contain;
-    background-position: center top;
-    min-height: calc(100vh - var(--nav-h, 56px));
-  }
-  #about, #explore, #testimonials, #contact {
-    min-height: auto; /* let content determine height */
-    padding: 20px 6%;
-  }
+    right:12px; }
+  #about { padding: 20px 6%; }
   .about-text .lead { font-size: .95rem; }
   .card-container { grid-template-columns: 1fr; gap: 14px; padding: 12px; }
   .card-img { height: 180px; }
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
+
 
