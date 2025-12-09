@@ -392,7 +392,12 @@ nav ul li a:hover {
     position: absolute; 
     top:64px; 
     right:12px; }
-  .nav-links.show { display: flex; flex-direction: column; }
+  .nav-links.show { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+  }
 }
 
   .card-container { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 18px; }
@@ -402,6 +407,17 @@ nav ul li a:hover {
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
   .hero{ padding: 28px 12px;}
+      .nav-links { 
+    display: none; 
+    position: absolute; 
+    top:64px; 
+    right:12px; }
+ .nav-links.show { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    }
   #about { padding: 20px 6%; }
   .about-text .lead { font-size: .95rem; }
   .card-container { grid-template-columns: 1fr; gap: 14px; padding: 12px; }
@@ -409,3 +425,4 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
