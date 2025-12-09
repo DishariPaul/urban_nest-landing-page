@@ -5,7 +5,10 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 /*MY FONT STYLES*/
 /* Mary Poppins Regular */
 @font-face {
@@ -339,10 +342,11 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .hero{
+    height: 100vh;
     background: url(./landbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
   }
   #about {
     flex-direction: row;    /* image above text */
@@ -416,5 +420,6 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
 
 
