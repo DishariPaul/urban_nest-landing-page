@@ -388,7 +388,7 @@ nav ul li a:hover {
 
   .nav-toggle { display: block; }
   .nav-links { 
-    display: none; 
+      display: none; 
     position: absolute; 
     top:64px; 
     right:12px; }
@@ -407,7 +407,7 @@ nav ul li a:hover {
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
   .hero{ padding: 28px 12px;}
-      .nav-links { 
+.nav-links { 
     display: none; 
     position: absolute; 
     top:64px; 
@@ -425,4 +425,5 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
 
