@@ -412,9 +412,22 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
-  body { padding-top: calc(var(--nav-h) + 8px); }
-
-  .hero { padding: 28px 12px; }
+ .hero{
+    height: 100vh;
+    background: url(./landbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .nav-links { 
+    background-color: #c8c3c3e9;
+    padding: 10px;
+    border-radius: 15px;
+    display: none; 
+    position: absolute; 
+    top:64px; 
+    right:12px; 
+    }
   #about { padding: 20px 6%; }
   .about-text .lead { font-size: .95rem; }
   .card-container { grid-template-columns: 1fr; gap: 14px; padding: 12px; }
@@ -422,6 +435,7 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
 
 
 
