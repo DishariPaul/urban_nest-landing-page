@@ -417,7 +417,7 @@ nav ul li a:hover {
     background: url(./landbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
   }
   .nav-links { 
     background-color: #c8c3c3e9;
@@ -435,6 +435,7 @@ nav ul li a:hover {
   .cust-card { flex-direction: column; text-align: center; align-items: center; }
   .cust-card img { margin-bottom: 12px; }
 }
+
 
 
 
